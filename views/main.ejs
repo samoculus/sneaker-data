@@ -1,0 +1,51 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Market Analysis</title>
+  <link rel="stylesheet" href="/assets/css/sanitize.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <div class="full-height vertical-align">
+      <div class="container max-height">
+        <table>
+          <thead>
+            <tr>
+              <th class="">Product</th>
+              <th class="">Retail Price</th>
+              <th class="">72 Hour sales</th>
+              <th class="">Price Premium</th>
+              <th class="">Pairs On Market</th>
+              <th class="">Lowest Ask</th>
+              <th class="">Lowest Ask Size</th>
+              <th class="">Highest Bid</th>
+              <th class="">Highest Bid Size</th>
+            </tr>
+          </thead>
+        <tbody>
+          <% for( let x = 0; x<data.length ; x++ ) { %>
+          <tr class="table-row">
+            <td data-label='pro'><img class="td-img" src="<%=data[x].image%>" alt=""> <%= data[x].title %></td>
+            <td data-label="Retail Price">$<%= data[x].price %></td>
+            <td data-label="72 hour sales"><%= data[x].sales %></td>
+            <td data-label='Price Premium'><%= Math.round(data[x].premium * 100) %>%</td>
+            <td data-label = 'pairs on market'><%= data[x].onmarket %></td>
+            <td data-label = 'Lowest Ask'><%= data[x].lowestask %></td>
+            <td data-label="Lowest Ask Size"><%= data[x].lowestsize %></td>
+            <td data-label='highest bid'><%= data[x].highestbid %></td>
+            <td data-label='highest bid size'><%= data[x].highestsize %></td>
+          </tr> 
+          <% } %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    </header>
+  <script src="/assets/js/script.js"></script>
+  </body>
+</html>
