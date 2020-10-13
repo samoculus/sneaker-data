@@ -34,9 +34,9 @@
             <td data-label="72 hour sales"><%= data[x].sales %></td>
             <td data-label='Price Premium'><%= Math.round(data[x].premium * 100) %>%</td>
             <td data-label = 'pairs on market'><%= data[x].onmarket %></td>
-            <td data-label = 'Lowest Ask'><%= data[x].lowestask %></td>
+            <td data-label = 'Lowest Ask'>$<%= data[x].lowestask %></td>
             <td data-label="Lowest Ask Size"><%= data[x].lowestsize %></td>
-            <td data-label='highest bid'><%= data[x].highestbid %></td>
+            <td data-label='highest bid'>$<%= data[x].highestbid %></td>
             <td data-label='highest bid size'><%= data[x].highestsize %></td>
           </tr> 
           <% } %>
