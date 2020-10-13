@@ -19,11 +19,6 @@ body {
     width: 100%;
   }
 
-  a {
-    color: #fff;
-    text-decoration: none;
-  }
-
 .inline {
     display: flex;
     flex-direction: row;
@@ -31,22 +26,11 @@ body {
     align-items: center;
     margin-bottom: 2em;
 }
- 
-  .mt-lg {
-    margin-top: 3em;
-  }
-  .mb-lg {
-    margin-bottom: 3em !important;
-  }
-  .mr-md {
-    margin-right: 4em;
-  }
   
   table {
     width: 98%;
     background-color: #0D1221;
     margin: 0 auto;
-    /*max-height: 300px;*/
     overflow: hidden;
     overflow-y: scroll;
   }
@@ -73,26 +57,8 @@ body {
     width: 90px;
   }
   
-  .section-head {
-    color: #fff;
-    font-size: 1.325em;
-    margin-bottom: 1.325em;
-  }
-  
-  .blue-text {
-    color: #6495ED;
-  }
-  
   .container {
     position: relative;
-  }
-  .border-bottom {
-    width: 100px;
-    height: 1px;
-    background-color: #6495ED;
-    margin-top: -20px;
-    position: absolute;
-    left: 2px;
   }
   
   .scroll-able {
@@ -110,7 +76,6 @@ body {
   }
   
   table {
-    /*border: 1px solid #ccc;*/
     border-collapse: collapse;
     margin: 0;
     padding: 0;
@@ -160,13 +125,11 @@ body {
     }
   
     table tr {
-      /*border-bottom: 3px solid #ddd;*/
       display: block;
       margin-bottom: .625em;
     }
   
     table td {
-      /*border-bottom: 1px solid #ddd;*/
       display: block;
       font-size: .8em;
       text-align: right;
@@ -177,10 +140,6 @@ body {
     }
   
     table td::before {
-      /*
-      * aria-label has no advantage, it won't be read inside a table
-      content: attr(aria-label);
-      */
       content: attr(data-label);
       float: left;
       font-weight: bold;
