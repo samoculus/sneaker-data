@@ -8,7 +8,7 @@ const postData = async (req, res) => {
 
     } catch(err) {
         console.log(err);
-        return res.remder('main')      
+        return res.render('main')      
     };
 };
 
